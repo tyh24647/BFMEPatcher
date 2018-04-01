@@ -76,10 +76,11 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDataSource
     ]
     
     var plistPaths: [String]! = [
-        
+    
     ]
     
     var exePaths: [String]! = [
+        
     ]
     
     override func viewWillAppear() {
@@ -116,6 +117,8 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var tmpFrame = CGRect(x: 0, y: 0, width: 400, height: 250)
+        self.view.frame = tmpFrame
 
         // Do any additional setup after loading the view.
         self.mainTitle.title = "BFME Resolution Switcher"
